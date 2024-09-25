@@ -1,0 +1,8 @@
+sequenceDiagram
+   
+   
+    Browser->>Server: (new_note_spa) Post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    Server-->>Browser: 201 OK (new_note_spa)
+    
+    Note over Browser: JavaScript dynamically updates content
+    Note over Browser: Does not reload the whole page
